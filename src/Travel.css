@@ -1,0 +1,51 @@
+.Travel {
+    text-align: center;
+    margin-top: 100px;
+    position:absolute;
+    bottom: 1000px;
+  }
+  
+  .Travel-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .Travel-logo {
+      animation: Map-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .travel.celebrated {
+    margin: 5;
+    
+  }
+  
+  .Travel-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .Travel-link {
+    color: #61dafb;
+  }
+  
+  @keyframes Travel-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .images{
+    display: inline-block;
+    max-height: 68px;
+    max-width: 68px;
+  }
