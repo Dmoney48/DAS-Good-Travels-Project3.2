@@ -7,7 +7,7 @@ import NewForm from './NewForm'
 
 
 
-let baseUrl = 'http://localhost:3003'
+let baseUrl = process.env.REACT_APP_BASEURL
 
 class Travel extends Component {
   constructor(props){
