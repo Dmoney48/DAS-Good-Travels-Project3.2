@@ -9,14 +9,14 @@ const SignUp = (props) => {
             <input
               type='text'
               name='username'
-              id='name'
+              id='newName'
               placeholder='Username'
               required
             />
             <input
               type='password'
               name='password'
-              id='password'
+              id='newPassword'
               placeholder='Choose your password'
             />
             {/* <input

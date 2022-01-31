@@ -10,11 +10,11 @@ function Login(props) {
             <input
               type='text'
               name='username'
-              id='name'
+              id='loginName'
               placeholder='Username'
               required
             />
-            <input type='password' name='password' id='password' placeholder='Password' />
+            <input type='password' name='password' id='loginPassword' placeholder='Password' />
             <button type='submit'>Log In</button>
           </form>
         </div>

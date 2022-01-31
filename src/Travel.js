@@ -115,12 +115,12 @@ register = (e) => {
   // }
 
   deleteTravel = (id) => { //This can either be bound to only our three usernames can delete or that you have to login to delete YOUR own posts.
-    console.log(id)
+    // console.log(id)
     fetch(baseUrl + '/travels/' + id, {
       method: 'DELETE',
       credentials: "include"
     }).then( res => {
-      console.log(res);
+    //   console.log(res);
       //if I checked for a 200 res code create.
       if(res.status === 200) {
         // console.log("here");
@@ -220,12 +220,13 @@ register = (e) => {
                   <td >{travel.name}</td>
                   <td >{travel.location}</td>
                   <td><img className="images" src={travel.img}/></td>
-                  <td >{travel.description}</td>
+                  {/* <td >{travel.description}</td> */}
                   <td >{travel.likes}</td>
                   <td onClick= {() => this.addLike(travel)}>Like</td>
                   <td onClick= {() => this.deleteTravel(travel._id)}>X</td>
                   {/* <td onClick= {() => this.showEditForm(travel)}>Edit this Travel</td> */}
                 </tr>
+
               )
             })}
           </tbody>
