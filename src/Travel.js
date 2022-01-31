@@ -226,6 +226,7 @@ register = (e) => {
                   <td onClick= {() => this.deleteTravel(travel._id)}>X</td>
                   {/* <td onClick= {() => this.showEditForm(travel)}>Edit this Travel</td> */}
                 </tr>
+
               )
             })}
           </tbody>

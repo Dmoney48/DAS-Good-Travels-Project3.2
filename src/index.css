@@ -62,7 +62,9 @@ body {
   height: 650px;
   text-align: center;
   color: #fff;
+  text-align: center;
 }
+
 
 .showcase .showcase-overlay h1 {
   font-size: 36px;
