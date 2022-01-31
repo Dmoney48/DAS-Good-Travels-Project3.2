@@ -16,6 +16,7 @@ function Login(props) {
             />
             <input type='password' name='password' id='loginPassword' placeholder='Password' />
             <button type='submit'>Log In</button>
+            <button type='submit'>Log Out</button>
           </form>
         </div>
       </section>

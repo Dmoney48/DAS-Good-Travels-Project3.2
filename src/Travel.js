@@ -4,6 +4,7 @@ import './Travel.css';
 import Explore from './Explore'
 import TopPlaces from './TopPlaces'
 import NewForm from './NewForm'
+import Header from './Header'
 
 
 
@@ -28,6 +29,9 @@ class Travel extends Component {
 
 loginUser = (e) => {
   e.preventDefault()
+  console.log(e.target.username.value)
+  console.log(e.target.password.value)
+  console.log("hello")
   fetch(baseUrl + '/users/login', {
     method: 'POST',
     body: JSON.stringify({
@@ -187,7 +191,7 @@ register = (e) => {
   }
 
   showEditForm = (travel) => {
-    // console.log('I was clicked!');
+    console.log('I was clicked!');
     this.setState({
       modalOpen:true,
       name: travel.name,
@@ -224,7 +228,7 @@ register = (e) => {
                   <td >{travel.likes}</td>
                   <td onClick= {() => this.addLike(travel)}>Like</td>
                   <td onClick= {() => this.deleteTravel(travel._id)}>X</td>
-                  {/* <td onClick= {() => this.showEditForm(travel)}>Edit this Travel</td> */}
+                  <td onClick= {() => this.showEditForm(travel)}>Edit this Travel</td>
                 </tr>
 
               )
@@ -242,9 +246,6 @@ register = (e) => {
             <input name="img" value={this.state.img} onChange={this.handleChange} /><br/>
             <label>Description: </label>
             <input name="description" value={this.state.description} onChange={this.handleChange} /><br/>
-
-
-            <button>Submit</button>
             <button>Submit</button>
           </form>
         }
