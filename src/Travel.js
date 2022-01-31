@@ -115,12 +115,12 @@ register = (e) => {
   // }
 
   deleteTravel = (id) => { //This can either be bound to only our three usernames can delete or that you have to login to delete YOUR own posts.
-    console.log(id)
+    // console.log(id)
     fetch(baseUrl + '/travels/' + id, {
       method: 'DELETE',
       credentials: "include"
     }).then( res => {
-      console.log(res);
+    //   console.log(res);
       //if I checked for a 200 res code create.
       if(res.status === 200) {
         // console.log("here");
