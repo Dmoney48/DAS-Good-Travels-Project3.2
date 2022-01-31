@@ -11,11 +11,15 @@ const Header = (props) => {
         </Link> */}
       </div>
 
-      <nav className='navbar'>
-        <ul>
-            <Login loginUser={props.loginUser}/>
-            <SignUp register={props.register}/> 
-        </ul>
+      <nav>
+         <table>
+          <tbody>
+              <tr>
+            <td><Login loginUser={props.loginUser}/></td>
+            <td><SignUp register={props.register}/> </td>
+              </tr>
+          </tbody>
+        </table>  
       </nav>
     </header>
   )
