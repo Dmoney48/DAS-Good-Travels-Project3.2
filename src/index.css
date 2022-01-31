@@ -7,10 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 
 * {
@@ -41,11 +41,11 @@ body {
   background-color: #16212d;
 }
 
-.header .links {
+/* .header .links {
   margin: 0 10px;
   color: #fff;
   text-decoration: none;
-}
+} */
 
 .showcase {
   background: url('https://images.fineartamerica.com/images-medium-large-5/7-background-travel-concept-potowizard-thailand.jpg')
@@ -74,6 +74,8 @@ body {
 .destinations {
   padding: 50px;
   text-align: center;
+  background: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77702102863.jpg')
+  no-repeat center/cover;
 }
 
 .destinations h3 {
@@ -91,6 +93,11 @@ body {
 
 .destinations .grid div img {
   border-radius: 10px;
+}
+.header {
+  display: flex;
+  flex-direction: column-reverse;
+
 }
 
 .footer {
@@ -162,6 +169,14 @@ body {
 .login .form-control button:hover {
   background-color: transparent;
 }
+
+.header{
+  background: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-travel-around-the-world-travel-poster-template-image_140335.jpg')
+  no-repeat center/cover;
+
+}
+
+
 
 @media (min-width: 768px) {
   .showcase {
