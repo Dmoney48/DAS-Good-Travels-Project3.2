@@ -220,7 +220,7 @@ register = (e) => {
                   <td >{travel.name}</td>
                   <td >{travel.location}</td>
                   <td><img className="images" src={travel.img}/></td>
-                  <td >{travel.description}</td>
+                  {/* <td >{travel.description}</td> */}
                   <td >{travel.likes}</td>
                   <td onClick= {() => this.addLike(travel)}>Like</td>
                   <td onClick= {() => this.deleteTravel(travel._id)}>X</td>
