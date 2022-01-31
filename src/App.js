@@ -16,7 +16,6 @@ function App() {
       <Showcase />
       <Destinations />
       <Footer />
-      <Travel />
     </div>
   );
 }

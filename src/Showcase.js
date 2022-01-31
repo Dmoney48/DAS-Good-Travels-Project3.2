@@ -1,6 +1,8 @@
 import React from 'react'
+import Travel from './Travel'
 
-const Showcase = () => {
+
+const Showcase = (props) => {
   return (
     <section className='showcase'>
       <div className='showcase-overlay'>
@@ -9,6 +11,8 @@ const Showcase = () => {
           Get to tour the world in style. Select a destination, book your
           flight, and off you go!
         </p>
+        <div>
+        </div>
       </div>
     </section>
   )
